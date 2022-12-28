@@ -1,0 +1,38 @@
+Processes = []
+BT = []
+n = int(input("Enter total number of processes : "))
+  
+for i in range(1, n+1):
+    a = (input("Enter " + str(i) + " process id : "))
+    Processes.append(a) 
+    b = int(input("Enter " + str(i) + " process burst time : "))
+    BT.append(b)
+
+# printing user inputs 
+print("*****Processes*****")
+print(Processes)
+print("*****Burst Time*****")
+print(BT)
+
+# waiting time 
+WT = [0]
+for i in range(0,n-1):
+  a = BT[i] + WT[i]
+  WT.append(a)
+print(WT)
+
+# turn around time 
+TAT = []
+for i in range(0,n):
+  a = BT[i] + WT[i]
+  TAT.append(a)
+
+print(TAT)
+
+# average of waitng time
+AV_WT = sum(WT) / len(WT)
+print(AV_WT)
+
+# Average of Turn around time
+AV_TAT = sum(TAT) / len(TAT)
+print(AV_TAT)

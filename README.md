@@ -1,2 +1,3 @@
-# FCFS
-First Come First Serve Scheduling Algorithm
+# Scheduling Algorithm
+
+FCFS, SJF, RR Implementation in Python

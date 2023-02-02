@@ -1,3 +1,3 @@
 # Scheduling Algorithms
 
-FCFS, SJF, RR Implementation in Python
+FCFS, SJF Implementation in Python
